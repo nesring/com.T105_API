@@ -75,6 +75,7 @@ public class C19_Put_TestDataClassKullanimi extends JsonPlaceHolderBaseUrl {
         // body icin JSONPath ihtixacimiz var
 
         JsonPath resJP = response.jsonPath();
+
         assertEquals(expData.get("title"),resJP.get("title"));
         assertEquals(expData.get("body"),resJP.get("body"));
         assertEquals(expData.get("userId"),resJP.get("userId"));

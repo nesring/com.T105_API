@@ -73,7 +73,7 @@ public class C13_Get_SoftAssertIleExpectedDataTesti {
 
         softAssert.assertEquals(resJPath.get("status"),expBody.get("status"));
         softAssert.assertEquals(resJPath.get("message"),expBody.get("message"));
-        softAssert.assertEquals(resJPath.get("data.id"),expBody.getJSONObject("data").get("id"));
+        softAssert.assertEquals(resJPath.get("data"),expBody.getJSONObject("data").get("id"));
         softAssert.assertEquals(resJPath.get("data.employee_name"),expBody.getJSONObject("data").get("employee_name"));
         softAssert.assertEquals(resJPath.get("data.employee_salary"),expBody.getJSONObject("data").get("employee_salary"));
         softAssert.assertEquals(resJPath.get("data.employee_age"),expBody.getJSONObject("data").get("employee_age"));
