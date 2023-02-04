@@ -9,10 +9,10 @@ import pojos.PojoDummyExpectedBody;
 import pojos.PojoHerokuappExpectedBody;
 
 import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
 
 public class C29_Get_Pojo extends DummyBaseUrl {
 
-    /*
     /*
     http://dummy.restapiexample.com/api/v1/employee/3 url’ine bir GET request
      gonderdigimizde donen response’un asagidaki gibi oldugunu test edin.
@@ -20,11 +20,11 @@ public class C29_Get_Pojo extends DummyBaseUrl {
     {
     "status":"success",
     "data":{
-            "id":3,
-            "employee_name":"Ashton Cox",
-            "employee_salary":86000,
-            "employee_age":66,
-            "profile_image":""
+             "id":3,
+             "employee_name":"Ashton Cox",
+             "employee_salary":86000,
+             "employee_age":66,
+             "profile_image":""
             },
     "message":"Successfully!Record has been fetched."
     }
@@ -52,13 +52,13 @@ public class C29_Get_Pojo extends DummyBaseUrl {
         PojoDummyExpectedBody respPojo = response.as(PojoDummyExpectedBody.class);
 
 
-        Assert.assertEquals(expBody.getStatus(),respPojo.getStatus());
-        Assert.assertEquals(expBody.getMessage(),respPojo.getMessage());
-        Assert.assertEquals(expBody.getData().getEmployee_name(),respPojo.getData().getEmployee_name());
-        Assert.assertEquals(expBody.getData().getEmployee_salary(),respPojo.getData().getEmployee_salary());
-        Assert.assertEquals(expBody.getData().getEmployee_age(),respPojo.getData().getEmployee_age());
-        Assert.assertEquals(expBody.getData().getProfile_image(),respPojo.getData().getProfile_image());
-        Assert.assertEquals(expBody.getData().getId(),respPojo.getData().getId());
+        assertEquals(expBody.getStatus(),respPojo.getStatus());
+        assertEquals(expBody.getMessage(),respPojo.getMessage());
+        assertEquals(expBody.getData().getEmployee_name(),respPojo.getData().getEmployee_name());
+        assertEquals(expBody.getData().getEmployee_salary(),respPojo.getData().getEmployee_salary());
+        assertEquals(expBody.getData().getEmployee_age(),respPojo.getData().getEmployee_age());
+        assertEquals(expBody.getData().getProfile_image(),respPojo.getData().getProfile_image());
+        assertEquals(expBody.getData().getId(),respPojo.getData().getId());
 
 
     }

@@ -23,7 +23,7 @@ public class POJOJsonPlaceHolder {
 
     // 2- getter ve setter hazirla
 
-
+    // sag tik >> generate >> getter setter hazirla >> hepsini sec
     public String getTitle() {
         return title;
     }
@@ -59,6 +59,7 @@ public class POJOJsonPlaceHolder {
 
     // 3- tum parametreleri iceren conscructor create et
 
+    // sag tik >> generate >> constructor
 
     public POJOJsonPlaceHolder(String title, String body, int id, int userId) {
         this.title = title;

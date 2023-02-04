@@ -41,13 +41,13 @@ public class C27_Put_PojoClass extends JsonPlaceHolderBaseUrl {
 
         POJOJsonPlaceHolder reqBody= new POJOJsonPlaceHolder("Ahmet","Merhaba",70,10);
 
-        System.out.println("reqBody" + reqBody);
+        System.out.println("reqBody = " + reqBody);
 
         // "-Expected data hazirla
 
         POJOJsonPlaceHolder expData= new POJOJsonPlaceHolder("Ahmet","Merhaba",70,10);
 
-        System.out.println("expData =" +expData);;
+        System.out.println("expData = " +expData);;
 
         // 3-Response kaydet
 
